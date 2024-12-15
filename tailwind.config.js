@@ -5,6 +5,9 @@ module.exports = {
     backgroundSize:{
       '90%':'90%'
     },
+    backgroundImage:{
+      'radial':'radial-gradient(circle, rgba(58,52,86,0.9) 0%, rgba(33,30,46,1) 100%)'
+    },
     extend: {
       container:{
         center:true,
@@ -13,7 +16,8 @@ module.exports = {
         }
       },
       colors:{
-        purple:"#C0B7E8"
+        purple:"#C0B7E8",
+        maincolor:'#302C42',
       }
     },
   },
