@@ -606,6 +606,10 @@ video {
   position: absolute;
 }
 
+.hover\:bg-gradient-to-r:hover {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
 .relative {
   position: relative;
 }
@@ -952,7 +956,8 @@ video {
   .lg\:bg-\[url\(\'assets\/images\/Group3\.svg\'\)\] {
     background-image: url('assets/images/Group3.svg');
   }
-  .lg\:bg-none {
-    background-image: none;
-  }
+}
+.lg\:bg-none {
+  background-image: none;
+
 }
