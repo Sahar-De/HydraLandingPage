@@ -6,7 +6,8 @@ module.exports = {
       '90%':'90%'
     },
     backgroundImage:{
-      'radial':'radial-gradient(circle, rgba(58,52,86,0.9) 0%, rgba(33,30,46,1) 100%)'
+      'radial':'radial-gradient(circle, rgba(58,52,86,0.9) 0%, rgba(33,30,46,1) 100%)',
+      'Bgradient': 'linear-gradient(to right,#8176AF, #C0B7E8)',
     },
     extend: {
       container:{
