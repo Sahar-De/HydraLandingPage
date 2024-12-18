@@ -4,17 +4,24 @@
     <meta charset="UTF-8" />
     <title>Hydra Landing Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   </head>
 
   <body class="mx-auto w-screen h-screen bg-maincolor relative">
-    <div class="absolute -z-10 top-0 lg:bg-[url('assets/images/Group3.svg')] bg-no-repeat bg-top w-screen h-screen"></div>
-    <header class="container flex items-center justify-between w-full px-2.5 pt-12">
+    <div
+      class="absolute -z-10 top-0 lg:bg-[url('assets/images/Group3.svg')] bg-no-repeat bg-top w-screen h-screen"
+    ></div>
+    <header
+      class="container flex items-center justify-between w-full px-2.5 pt-12"
+    >
       <div class="logo-container flex items-center">
         <img src="assets/images/Frame.png" class="w-[69px]" />
         <img src="assets/images/hydra.png" class="w-[46px] md:w-[76px]" />
       </div>
-      <nav class="navigation hidden lg:block text-sm text-yellow-300 font-semibold">
+      <nav
+        class="navigation hidden lg:block text-sm text-yellow-300 font-semibold"
+      >
         <ul class="flex items-center gap-10 text-white">
           <li><a>About</a></li>
           <li><a>Services</a></li>
@@ -39,10 +46,12 @@
       </div>
     </header>
 
-    <section class="hero bg-[url('assets/images/bg-lines.svg')] lg:bg-none  bg-no-repeat bg-top md:bg-right">
+    <section class="hero bg-[url('assets/images/bg-lines.svg')] lg:bg-none bg-no-repeat bg-top md:bg-right bg-transparent">
       <div class="container">
         <div class="flex flex-col">
-          <div class="hero-image pt-28 flex flex-col items-center md:flex-row md:justify-between md:gap-x-1 lg:gap-x-64 gap-y-8">
+          <div
+            class="hero-image pt-28 flex flex-col items-center md:flex-row md:justify-between md:gap-x-1 lg:gap-x-64 gap-y-8"
+          >
             <img
               src="assets/images/hero-image.png "
               class="md:order-2 lg:w-5/12"
@@ -82,79 +91,41 @@
           </div>
 
           <div class="slider-Container hidden lg:block pt-28">
-            <div class="Slider flex bg-[radial-gradient(circle_at_50%_75%,#3A3456,#211E2E)] rounded-3xl shadow  justify-between drop-shadow-xl p-10">
+            <div class="Slider flex  bg-radial rounded-3xl shadow  justify-between drop-shadow-xl p-10">
               <div class="flex max-w-72 gap-2 items-center">
-                <img class="size-14" src="assets/images/Location.svg"/>
+                <img class="size-14" src="assets/images/Location.svg" />
                 <div class="flex flex-col">
-                  <label class="text-white text-bold text-2xl">Pay Us a Visit</label>
-                  <span class="text-md text-white">Union St, Seattle, WA 98101, United States</span>
+                  <label class="text-white text-bold text-2xl"
+                    >Pay Us a Visit</label
+                  >
+                  <span class="text-md text-white"
+                    >Union St, Seattle, WA 98101, United States</span
+                  >
                 </div>
-
               </div>
-              <hr class="h-16 w-[0.5px] border bg-gray-50">
-              <div class="flex max-w-72 gap-2 items-center ">
-                <img class="size-14" src="assets/images/phone.svg"/>
+              <hr class="h-16 w-[0.5px] border bg-gray-50" />
+              <div class="flex max-w-72 gap-2 items-center">
+                <img class="size-14" src="assets/images/phone.svg" />
                 <div class="flex flex-col">
-                  <label class="text-white text-bold text-2xl">Giv Us a Call</label>
+                  <label class="text-white text-bold text-2xl"
+                    >Giv Us a Call</label
+                  >
                   <span class="text-md text-white">(110) 1111-1010</span>
                 </div>
-
               </div>
-              <hr class="h-16 w-[0.5px] border bg-gray-50">
+              <hr class="h-16 w-[0.5px] border bg-gray-50" />
               <div class="flex max-w-72 gap-2 items-center">
-                <img class="size-14" src="assets/images/mail.svg"/>
+                <img class="size-14" src="assets/images/mail.svg" />
                 <div class="flex flex-col">
-                  <label class="text-white text-bold text-2xl">Send Us a Message</label>
+                  <label class="text-white text-bold text-2xl"
+                    >Send Us a Message</label
+                  >
                   <span class="text-md text-white">Contact@HydraVTech.com</span>
                 </div>
-
               </div>
             </div>
           </div>
-
-
         </div>
-      </div>
-    </section>
-
-    <section class="Introduction  h-96 mt-24  bg-[url('assets/images/IntroductionBg.svg')] bg-no-repeat bg-bottom">
-      <div class="container flex flex-col gap-16 p-3">
-        <div class="flex flex-col gap-12  md:flex-row justify-between">
-          <div class="flex md:w-1/2 lg:w-5/12 p-2">
-            <h3 class="font-bold text-3xl text-center md:text-left w-full text-white">INTRODUCTION <br><span class="font-light block my-4">TO HYDRA VR</span></h3>
-            <img src="./assets/images/longArrow.svg" class="hidden lg:block">
-          </div>
-          <div class="md:w1/2 lg:w-5/12">
-            <p class="text-md text-justify text-white">
-              Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
-               nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
-               quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
-               lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
-           </p>
-          </div>
-        </div>
-        
-        <div class="flex flex-col gap-12 md:flex-row justify-between">
-          <img src="assets/images/IntroductionPhoto.png" alt="hydra" class="lg:w-5/12 max-h-96 max-w-96">
-          <div class="lg:w-5/12 flex flex-col gap-10">
-            <h3 class="font-bold text-3xl text-center md:text-left w-full text-white">ABOUT<br><span class="font-light block my-4">HYDRA VR</span></h3>
-            <p class="text-white text-justify">
-              Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus
-              urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida
-              dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in.
-              Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet
-              sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam
-              etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet
-              cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha
-              retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
-              n tempor.
-            </p>
-            <button class="Rectangle5  border border-purple w-52 h-12 text-center font-semibold transition-all duration-200 text-sm px-5 py-1.5 hover:bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-white ">
-                Lets Get In Touch
-            </button>
-          </div>
-        </div>
-  
       </div>
     </section>
   </body>
