@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.15 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -606,10 +606,6 @@ video {
   position: absolute;
 }
 
-.hover\:bg-gradient-to-r:hover {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
 .relative {
   position: relative;
 }
@@ -631,6 +627,18 @@ video {
   margin-left: 1.25rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -646,6 +654,10 @@ video {
 
 .h-16 {
   height: 4rem;
+}
+
+.h-96 {
+  height: 24rem;
 }
 
 .h-full {
@@ -739,12 +751,16 @@ video {
   background-color: transparent;
 }
 
-.bg-\[url\(\'assets\/images\/bg-lines\.svg\'\)\] {
-  background-image: url('assets/images/bg-lines.svg');
+.bg-\[radial-gradient\(circle_at_50\%_75\%\2c \#3A3456\2c \#211E2E\)\] {
+  background-image: radial-gradient(circle at 50% 75%,#3A3456,#211E2E);
 }
 
-.bg-radial {
-  background-image: radial-gradient(circle, rgba(58,52,86,0.9) 0%, rgba(33,30,46,1) 100%);
+.bg-\[url\(\'assets\/images\/IntroductionBg\.svg\'\)\] {
+  background-image: url('assets/images/IntroductionBg.svg');
+}
+
+.bg-\[url\(\'assets\/images\/bg-lines\.svg\'\)\] {
+  background-image: url('assets/images/bg-lines.svg');
 }
 
 .from-\[\#8076af\] {
@@ -755,6 +771,10 @@ video {
 
 .to-\[\#c0b7e7\] {
   --tw-gradient-to: #c0b7e7 var(--tw-gradient-to-position);
+}
+
+.bg-bottom {
+  background-position: bottom;
 }
 
 .bg-top {
@@ -839,6 +859,10 @@ video {
   font-weight: 700;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -890,6 +914,10 @@ video {
 
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.hover\:bg-gradient-to-r:hover {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 @media (min-width: 768px) {
@@ -956,8 +984,8 @@ video {
   .lg\:bg-\[url\(\'assets\/images\/Group3\.svg\'\)\] {
     background-image: url('assets/images/Group3.svg');
   }
-}
-.lg\:bg-none {
-  background-image: none;
 
+  .lg\:bg-none {
+    background-image: none;
+  }
 }
