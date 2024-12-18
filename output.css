@@ -623,8 +623,21 @@ video {
   margin-right: auto;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .ml-5 {
   margin-left: 1.25rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -644,12 +657,20 @@ video {
   height: 4rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .h-full {
   height: 100%;
 }
 
 .h-screen {
   height: 100vh;
+}
+
+.max-h-96 {
+  max-height: 24rem;
 }
 
 .w-1 {
@@ -676,8 +697,20 @@ video {
   width: 100vw;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
+.w-52 {
+  width: 13rem;
+}
+
 .max-w-72 {
   max-width: 18rem;
+}
+
+.max-w-96 {
+  max-width: 24rem;
 }
 
 .flex-shrink-0 {
@@ -700,8 +733,21 @@ video {
   gap: 2.5rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
 }
 
 .gap-y-8 {
@@ -735,8 +781,16 @@ video {
   background-color: transparent;
 }
 
+.bg-\[url\(\'assets\/images\/IntroductionBg\.svg\'\)\] {
+  background-image: url('assets/images/IntroductionBg.svg');
+}
+
 .bg-\[url\(\'assets\/images\/bg-lines\.svg\'\)\] {
   background-image: url('assets/images/bg-lines.svg');
+}
+
+.bg-\[radial-gradient\(circle\2c \#3A3456\2c \#211E2E\)\] {
+  background-image: radial-gradient(circle,#3A3456,#211E2E);
 }
 
 .from-\[\#8076af\] {
@@ -747,6 +801,10 @@ video {
 
 .to-\[\#c0b7e7\] {
   --tw-gradient-to: #c0b7e7 var(--tw-gradient-to-position);
+}
+
+.bg-bottom {
+  background-position: bottom;
 }
 
 .bg-top {
@@ -761,6 +819,10 @@ video {
   padding: 2.5rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -769,6 +831,11 @@ video {
 .px-2\.5 {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-5 {
@@ -829,6 +896,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .font-semibold {
@@ -899,6 +970,10 @@ video {
 
   .md\:block {
     display: block;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:w-\[76px\] {
