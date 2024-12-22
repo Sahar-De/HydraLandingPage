@@ -649,6 +649,10 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .mb-32 {
   margin-bottom: 8rem;
 }
@@ -697,14 +701,6 @@ video {
   margin-top: 1.75rem;
 }
 
-.mb-7 {
-  margin-bottom: 1.75rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
 .block {
   display: block;
 }
@@ -736,6 +732,16 @@ video {
   height: 15rem;
 }
 
+.size-48 {
+  width: 12rem;
+  height: 12rem;
+}
+
+.size-40 {
+  width: 10rem;
+  height: 10rem;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -756,16 +762,16 @@ video {
   height: 12rem;
 }
 
+.h-52 {
+  height: 13rem;
+}
+
 .h-full {
   height: 100%;
 }
 
 .h-screen {
   height: 100vh;
-}
-
-.h-52 {
-  height: 13rem;
 }
 
 .max-h-96 {
@@ -824,6 +830,10 @@ video {
   width: 100vw;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
 .max-w-72 {
   max-width: 18rem;
 }
@@ -858,6 +868,10 @@ video {
   flex-wrap: wrap;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -872,14 +886,6 @@ video {
 
 .justify-evenly {
   justify-content: space-evenly;
-}
-
-.justify-items-center {
-  justify-items: center;
-}
-
-.justify-items-stretch {
-  justify-items: stretch;
 }
 
 .gap-10 {
@@ -906,26 +912,22 @@ video {
   gap: 11rem;
 }
 
-.gap-x-5 {
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
-}
-
-.gap-y-8 {
-  row-gap: 2rem;
-}
-
 .gap-x-2\.5 {
   -moz-column-gap: 0.625rem;
        column-gap: 0.625rem;
 }
 
-.gap-y-5 {
-  row-gap: 1.25rem;
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
 }
 
 .gap-y-10 {
   row-gap: 2.5rem;
+}
+
+.gap-y-8 {
+  row-gap: 2rem;
 }
 
 .justify-self-center {
@@ -1032,12 +1034,12 @@ video {
   background-position: bottom;
 }
 
-.bg-top {
-  background-position: top;
-}
-
 .bg-center {
   background-position: center;
+}
+
+.bg-top {
+  background-position: top;
 }
 
 .bg-no-repeat {
@@ -1054,6 +1056,11 @@ video {
 
 .p-24 {
   padding: 6rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-16 {
@@ -1089,11 +1096,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .py-5 {
