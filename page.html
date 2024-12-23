@@ -178,7 +178,7 @@
               class="flex flex-col items-center lg:items-start gap-y-8 md:w-6/12"
             >
               <h3
-                class="font-bold text-3xl text-center md:text-left w-full text-white"
+                class="font-bold text-3xl text-center lg:text-left w-full text-white"
               >
                 ABOUT<br /><span class="font-light block my-4">HYDRA VR</span>
               </h3>
@@ -464,8 +464,8 @@
         </div>
       </div>
 
-      <div class="mobile lg:hidden  flex justify-center items-center">
-        <div class="relative container h-[270px]">
+      <div  class="mobile relative lg:hidden  flex justify-center items-center">
+        <div id="processSlider" class="relative container h-[270px]">
           <div class="absolute left-1/2 -translate-x-1/2 min-w-[194px] flex flex-col items-center ">
             <div class="rounded-full size-40 text-6xl font-black text-center text-[#343045] bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)] flex items-center justify-center">
               01
@@ -519,9 +519,10 @@
               </p>
             </div>
           </div>
-          <button class="absolute top-2/3 right-0"><img src="assets/images/arrowNext.svg"></button>
-          <button class="absolute top-2/3"><img src="assets/images/arrowPrev.svg"></button>
+
         </div>
+        <button id="nextBtn" class="absolute top-2/3 right-0 -translate-x-1/2"><img src="assets/images/arrowNext.svg"></button>
+        <button id="prevBtn" class="absolute top-2/3 left-0 translate-x-1/2"><img src="assets/images/arrowPrev.svg"></button>
 
       </div>
 
@@ -549,4 +550,5 @@
     </footer>
 
   </body>
+<script src="Scripts/ProcessSlider.js"></script>
 </html>
