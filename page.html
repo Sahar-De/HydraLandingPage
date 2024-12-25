@@ -329,18 +329,48 @@
 
     <!-- Section : Technologies -->
       <section id="tech" class="mt-28">
-      <div class="container flex flex-col gap-24">
-        <div class="relative ">
-          <img src="assets/images/techPic.png" alt="hydra">
-          <a><img src="assets/images/downIcon.png" class="absolute left-1/2 top-full -translate-x-1/2 -translate-y-1/2 hidden md:block"></a>
+        <div class="container flex flex-col gap-24">
+          <div class="relative bg-[url('assets/images/techPic.svg')] rounded-full bg-no-repeat bg-contain h-[19rem] w-full">
+            <div class="h-full w-full text-center table">
+              <div class="table-cell align-middle">
+                <p class="font-bold text-3xl text-white">TECHNOLOGIES & HARDWARE</p>
+                <p class="font-light text-3xl text-white">USED BY HYDRA VR.</p>
+              </div>
+            </div>
+        
+            <a>
+              <img src="assets/images/downIcon.png" class="absolute left-1/2 top-full -translate-x-1/2 -translate-y-1/2 md:block">
+            </a>
+          </div>
         </div>
+        
+        
+       <div class="swiper-container container mt-28 relative">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide !flex justify-center items-center mt-14">
+      <img class="max-w-full h-auto block" src="assets/images/unreal.png" alt="unreal" />
+    </div>
+    <div class="swiper-slide !flex justify-center items-center">
+      <img class="max-w-full h-auto block" src="assets/images/VIVE.png" alt="VIVE" />
+    </div>
+    <div class="swiper-slide !flex justify-center items-center">
+      <img class="max-w-full h-auto block" src="assets/images/oculus.png" alt="oculus" />
+    </div>
+    <div class="swiper-slide !flex justify-center items-center">
+      <img class="max-w-full h-auto block" src="assets/images/unity.png" alt="unity" />
+    </div>
+  </div>
+ 
+  <button class="swiper-button-prevP absolute top-1/2 left-4 -translate-y-1/2 z-10">
+    <img src="assets/images/arrowPrev.svg" alt="Previous" />
+  </button>
+  <button class="swiper-button-nextN absolute top-1/2 right-4 -translate-y-1/2 z-10">
+    <img src="assets/images/arrowNext.svg" alt="Next" />
+  </button>
+  
+  <div class="swiper-pagination"></div>
+</div>
 
-        <div class="flex justify-evenly flex-wrap">
-          <img class="size-60" src="assets/images/VIVE.png" alt="hydra">
-          <img class="size-44" src="assets/images/unreal.png" alt="hydra">
-          <img class="size-60" src="assets/images/oculus.png" alt="hydra">
-          <img class="size-60" src="assets/images/unity.png" alt="hydra">
-        </div>
         
       </div>
        </section>
