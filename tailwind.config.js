@@ -10,7 +10,8 @@ module.exports = {
       container:{
         center:true,
         padding:{
-          md:'2rem'
+          md:'2rem',
+          sm:'2rem',
         }
       },
       colors:{
