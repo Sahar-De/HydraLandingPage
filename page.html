@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   </head>
 
-  <body class="mx-auto w-screen h-screen bg-maincolor relative">
+  <body class="mx-auto w-screen h-screen overflow-x-hidden bg-maincolor relative">
     <div
       class="absolute -z-10 top-0 lg:bg-[url('assets/images/Group3.svg')] bg-no-repeat bg-top w-screen h-screen"
     ></div>
@@ -49,10 +49,11 @@
        </header>
 
     <!-- Dive: Virtual Reality -->
-      <section
-        class="hero bg-[url('assets/images/bg-lines.svg')] lg:bg-none bg-no-repeat bg-top md:bg-right bg-transparent"
-      >
+      <section class="hero bg-[url('assets/images/bg-lines.svg')] lg:bg-none bg-no-repeat bg-top md:bg-right bg-transparent">
         <div class="container">
+
+
+          
           <div class="flex flex-col">
             <div
               class="hero-image pt-28 flex flex-col items-center md:flex-row md:justify-between md:gap-x-1 lg:gap-x-64 gap-y-8"
@@ -95,43 +96,49 @@
               </div>
             </div>
 
-            <div class="slider-Container hidden lg:block pt-28">
-              <div
-                class="Slider flex bg-[radial-gradient(circle,#3A3456,#211E2E)] rounded-3xl shadow justify-between drop-shadow-xl p-10"
-              >
-                <div class="flex max-w-72 gap-2 items-center">
-                  <img class="size-14" src="assets/images/Location.svg" />
-                  <div class="flex flex-col">
-                    <label class="text-white text-bold text-2xl"
-                      >Pay Us a Visit</label
-                    >
-                    <span class="text-md text-white"
-                      >Union St, Seattle, WA 98101, United States</span
-                    >
+            <div class="pt-28">
+              <div class="swiper-container relative bg-[radial-gradient(circle,#3A3456,#211E2E)] rounded-full shadow drop-shadow-xl p-10">
+                <div class="swiper-wrapper flex justify-between items-center ">
+
+                  <div class="swiper-slide left-div !flex justify-center items-center gap-2">
+                    <img class="size-14" src="assets/images/Location.svg" />
+                    <div class="flex flex-col">
+                      <label class="text-white text-bold text-2xl">Pay Us a Visit</label>
+                      <span class="text-md text-white">Union St, Seattle, WA 98101, United States</span>
+                    </div>
                   </div>
-                </div>
-                <hr class="h-16 w-[0.5px] border bg-gray-50" />
-                <div class="flex max-w-72 gap-2 items-center">
-                  <img class="size-14" src="assets/images/phone.svg" />
-                  <div class="flex flex-col">
-                    <label class="text-white text-bold text-2xl"
-                      >Giv Us a Call</label
-                    >
-                    <span class="text-md text-white">(110) 1111-1010</span>
+
+                  <div class="swiper-slide right-div !flex justify-center items-center gap-2">
+                    <img class="size-14" src="assets/images/phone.svg" />
+                    <div class="flex flex-col">
+                      <label class="text-white text-bold text-2xl">Give Us a Call</label>
+                      <span class="text-md text-white">(110) 1111-1010</span>
+                    </div>
                   </div>
-                </div>
-                <hr class="h-16 w-[0.5px] border bg-gray-50" />
-                <div class="flex max-w-72 gap-2 items-center">
-                  <img class="size-14" src="assets/images/mail.svg" />
-                  <div class="flex flex-col">
-                    <label class="text-white text-bold text-2xl"
-                      >Send Us a Message</label
-                    >
-                    <span class="text-md text-white">Contact@HydraVTech.com</span>
+                  <hr class=" hidden md:block h-16 w-[0.5px] border bg-gray-50" />
+
+                  <div class="swiper-slide bottom-div !flex justify-center items-center gap-2">
+                    <img class="size-14" src="assets/images/mail.svg" />
+                    <div class="flex flex-col">
+                      <label class="text-white text-bold text-2xl">Send Us a Message</label>
+                      <span class="text-md text-white">Contact@HydraVTech.com</span>
+                    </div>
                   </div>
+                  <hr class="hidden md:block h-16 w-[0.5px] border bg-gray-50" />
+
                 </div>
+            
+                <button class="swiper-button-prevP absolute top-1/2 left-0 z-10">
+                  <img src="assets/images/chevron-circle-left.svg" alt="Previous" />
+                </button>
+                <button class="swiper-button-nextN absolute top-1/2 right-0 z-10">
+                  <img src="assets/images/chevron-circle-right.svg" alt="Next" />
+                </button>
+            
               </div>
+              
             </div>
+
           </div>
         </div>
        </section>
@@ -143,7 +150,7 @@
           <div class="container">
             <div class="flex flex-col gap-16">
               <div class="flex flex-col md:flex-row justify-between">
-                <div class="flex flex-col lg:flex-row md:w-1/2 p-2">
+                <div class=" left-div flex flex-col lg:flex-row md:w-1/2 p-2">
                   <h3
                     class="font-bold text-3xl text-center md:text-left text-white"
                   >
@@ -156,7 +163,7 @@
                     class="hidden lg:block w-64"
                   />
                 </div>
-                <div class="md:w-1/2">
+                <div class="right-div md:w-1/2">
                   <p class="text-md text-justify text-white p-2">
                     Vitae sapien pellentesque habitant morbi tristique senectus et
                     netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
@@ -167,17 +174,16 @@
                   </p>
                 </div>
               </div>
-
               <div
                 class="flex flex-col gap-y-8 gap-x-5 items-center md:flex-row justify-between"
               >
                 <img
                   src="assets/images/IntroductionPhoto.png"
                   alt="hydra"
-                  class="max-h-96 max-w-96 lg:w-6/12"
+                  class="left-div max-h-96 max-w-96 lg:w-6/12"
                 />
                 <div
-                  class="flex flex-col items-center lg:items-start gap-y-8 md:w-6/12"
+                  class="right-div flex flex-col items-center lg:items-start gap-y-8 md:w-6/12"
                 >
                   <h3
                     class="font-bold text-3xl text-center lg:text-left w-full text-white"
@@ -239,7 +245,7 @@
             </div>
           </div>
 
-          <div class="swiper-container mySwiper relative">
+          <div class="swiper-container mySwiper container relative">
             <div class="swiper-wrapper">
               <!-- Slide 1 -->
               <div class="swiper-slide text-white bg-[radial-gradient(circle,#3A3456,#211E2E)] md:w-[300px] lg:w-[290px] rounded-3xl px-8 py-10 !flex flex-col items-center">
@@ -341,7 +347,7 @@
        </section>
 
     <!-- Section : Technologies -->
-      <section id="tech" class="mt-28">
+      <section id="tech" class="mt-20">
         <div class="container flex flex-col gap-24">
           <div class="relative bg-[url('assets/images/techPic.svg')] rounded-full bg-no-repeat bg-center bg-cover h-[19rem] w-full">
             <div class="h-full w-full text-center table">
@@ -387,10 +393,10 @@
        </section>
 
     <!-- Section : WITH HYDRA VR? -->
-      <section class="mt-24">
+      <section class="mt-20">
         <div class="container ">
 
-          <div class="flex flex-col md:flex-row justify-center items-center lg:items-start text-white mb-32">
+          <div class="flex flex-col md:flex-row justify-center items-center lg:items-start text-white">
             <div class="md:w-1/2 w-full flex items-center md:items-start">
               <div class="w-full">
                 <p class="text-3xl font-bold text-center md:text-left">HOW WE BUILD</p>
@@ -415,7 +421,7 @@
           </div>
         </div>
 
-        <div class="swiper-container relative ">
+        <div class="swiper-container container relative ">
           <div class="swiper-wrapper ">
             <!-- اسلاید 1 -->
             <div class="swiper-slide flex justify-center items-center bg-center bg-no-repeat">
@@ -485,7 +491,6 @@
             <img src="assets/images/arrowNext.svg" alt="Next" />
           </button>
         
-          <div class="swiper-pagination"></div>
         </div>
 
        </section>
@@ -571,5 +576,8 @@
        <!-- JS Slider  -->
        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
        <script src="Scripts/ProcessSlider.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+       <script src="Scripts/animations.js"></script>
   </body>
 </html>
