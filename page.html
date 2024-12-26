@@ -22,22 +22,24 @@
           <img src="assets/images/Frame.png" class="w-[69px]" />
           <img src="assets/images/hydra.png" class="w-[46px] md:w-[76px]" />
         </div>
-        <nav class="navigation h-0 overflow-hidden lg:h-auto text-sm text-yellow-300 font-semibold">
-          <ul class="flex flex-col lg:flex-row items-center gap-10 text-white">
-            <li><a>About</a></li>
-            <li><a>Services</a></li>
-            <li><a>Techhologies</a></li>
-            <li><a>How To</a></li>
+        <nav
+          class="navigation hidden lg:block text-sm text-yellow-300 font-semibold"
+        >
+          <ul class="flex items-center gap-10 text-white">
+            <li class="cursor-pointer hover:text-yellow-100"><a>About</a></li>
+            <li class="cursor-pointer hover:text-yellow-100"><a>Services</a></li>
+            <li class="cursor-pointer hover:text-yellow-100"><a>Techhologies</a></li>
+            <li class="cursor-pointer hover:text-yellow-100"><a>How To</a></li>
           </ul>
         </nav>
         <div class="right-buttons hidden lg:block">
           <button
-            class="Rectangle5 border border-purple font-semibold transition-all duration-200 text-sm px-5 py-1.5 hover:bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-white text-justify"
+            class="Rectangle5  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 border border-purple font-semibold transition-all duration-200 text-sm px-5 py-1.5 hover:bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-white text-justify"
           >
             Contact Us
           </button>
           <button
-            class="Rectangle5 border border-purple ml-5 font-semibold transition-all duration-200 text-sm px-5 py-1.5 hover:bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-white text-justify"
+            class="Rectangle5  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 border border-purple ml-5 font-semibold transition-all duration-200 text-sm px-5 py-1.5 hover:bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-white text-justify"
           >
             Join Hydra
           </button>
@@ -82,7 +84,7 @@
                 </p>
                 <div class="flex gap-10">
                   <button
-                    class="Rectangle5 h-12 w-56 flex-shrink-0 text-center border border-purple font-semibold transition-all duration-200 hover:bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-white"
+                    class="Rectangle5 h-12 w-52 flex-shrink-0 text-center border border-purple font-semibold transition-all duration-200  hover:bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-white"
                   >
                     Build Your World
                   </button>
@@ -198,7 +200,7 @@
                   </p>
 
                   <button
-                    class="Rectangle5 h-12 w-52 flex-shrink-0 text-center border border-purple transition-all duration-200  hover:bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-white"
+                    class="Rectangle5 h-12 w-52 flex-shrink-0 text-center border border-purple transition-all duration-200 hover:bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-white"
                   >
                     Get In Touch
                   </button>
@@ -211,6 +213,8 @@
     <!-- Section : Why Build - Cards -->
       <section class="mt-20">
         <div class="container">
+
+
           <div class="flex flex-col md:flex-row justify-center items-center lg:items-start text-white mb-10">
             <div class="md:w-1/2 w-full flex items-center md:items-start">
               <div class="w-full">
@@ -236,115 +240,155 @@
             </div>
           </div>
 
-          <div class="flex flex-wrap justify-center gap-4 text-white">
-            <div
-              class="bg-[radial-gradient(circle,#3A3456,#211E2E)] md:w-[300px] lg:w-[290px] rounded-3xl px-8 py-10 flex flex-col items-center"
-            >
-              <img
-                class="rounded-full shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)]"
-                src="./assets/images/SIMULATION.svg"
-                alt="Simulation"
-              />
-              <p class="text-xl font-bold mt-6 border-b border-[#C0B7E854] h-10">
-                SIMULATION
-              </p>
-              <p class="text-xs mt-6 break-words w-56">
-                Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
-                porttitor rhoncus libero justo laoreet sit amet vitae.
-              </p>
-              <button
-                class="bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] mt-6 text-center text-xs font-bold text-[#343045] w-36 h-10 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
-              >
-                TRY IT NOW
-              </button>
+          <div class="swiper-container mySwiper relative">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide text-white bg-[radial-gradient(circle,#3A3456,#211E2E)] md:w-[300px] lg:w-[290px] rounded-3xl px-8 py-10 !flex flex-col items-center">
+                <img
+                  class="rounded-full shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)]"
+                  src="./assets/images/SIMULATION.svg"
+                  alt="Simulation"
+                />
+                <p class="text-xl font-bold mt-6 border-b border-[#C0B7E854] h-10">
+                  SIMULATION
+                </p>
+                <p class="text-xs mt-6 break-words w-56">
+                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                  porttitor rhoncus libero justo laoreet sit amet vitae.
+                </p>
+                <button
+                  class="bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] mt-6 text-center text-xs font-bold text-[#343045] w-36 h-10 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                >
+                  TRY IT NOW
+                </button>
+              </div>
+          
+              <!-- Slide 2 -->
+              <div class="swiper-slide text-white bg-[radial-gradient(circle,#3A3456,#211E2E)] md:w-[300px] lg:w-[290px] rounded-3xl px-8 py-10 !flex flex-col items-center">
+                <img
+                  class="rounded-full shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)]"
+                  src="./assets/images/EDUCATION.svg"
+                  alt="Education"
+                />
+                <p class="text-xl font-bold mt-6 border-b border-[#C0B7E854] h-10">
+                  EDUCATION
+                </p>
+                <p class="text-xs mt-6 break-words w-56">
+                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                  porttitor rhoncus libero justo laoreet sit amet vitae.
+                </p>
+                <button
+                  class="bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] mt-6 text-center text-xs font-bold text-[#343045] w-36 h-10 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                >
+                  TRY IT NOW
+                </button>
+              </div>
+          
+              <!-- Slide 3 -->
+              <div class="swiper-slide text-white bg-[radial-gradient(circle,#3A3456,#211E2E)] md:w-[300px] lg:w-[290px] rounded-3xl px-8 py-10 !flex flex-col items-center">
+                <img
+                  class="rounded-full shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)]"
+                  src="./assets/images/SELF-CARE.svg"
+                  alt="Self-Care"
+                />
+                <p class="text-xl font-bold mt-6 border-b border-[#C0B7E854] h-10">
+                  SELF-CARE
+                </p>
+                <p class="text-xs mt-6 break-words w-56">
+                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                  porttitor rhoncus libero justo laoreet sit amet vitae.
+                </p>
+                <button
+                  class="bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] mt-6 text-center text-xs font-bold text-[#343045] w-36 h-10 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                >
+                  TRY IT NOW
+                </button>
+              </div>
+          
+              <!-- Slide 4 -->
+              <div class="swiper-slid text-white bg-[radial-gradient(circle,#3A3456,#211E2E)] md:w-[300px] lg:w-[290px] rounded-3xl px-8 py-10 !flex flex-col items-center">
+                <img
+                  class="rounded-full shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)]"
+                  src="./assets/images/OUTDOOR.svg"
+                  alt="Outdoor"
+                />
+                <p class="text-xl font-bold mt-6 border-b border-[#C0B7E854] h-10">
+                  OUTDOOR
+                </p>
+                <p class="text-xs mt-6 break-words w-56">
+                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                  porttitor rhoncus libero justo laoreet sit amet vitae.
+                </p>
+                <button
+                  class="bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] mt-6 text-center text-xs font-bold text-[#343045] w-36 h-10 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                >
+                  TRY IT NOW
+                </button>
+              </div>
             </div>
-            <div
-              class="bg-[radial-gradient(circle,#3A3456,#211E2E)] md:w-[300px] lg:w-[290px] rounded-3xl px-8 py-10 flex flex-col items-center"
-            >
-              <img
-                class="rounded-full shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)]"
-                src="./assets/images/EDUCATION.svg"
-                alt="Education"
-              />
-              <p class="text-xl font-bold mt-6 border-b border-[#C0B7E854] h-10">
-                EDUCATION
-              </p>
-              <p class="text-xs mt-6 break-words w-56">
-                Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
-                porttitor rhoncus libero justo laoreet sit amet vitae.
-              </p>
-              <button
-                class="bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] mt-6 text-center text-xs font-bold text-[#343045] w-36 h-10 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
-              >
-                TRY IT NOW
+          
+              <button class="swiper-button-prevP absolute top-1/2 left-0 translate-x-1 z-10">
+                <img src="assets/images/arrowPrev.svg" alt="Previous" />
               </button>
-            </div>
-            <div
-              class="bg-[radial-gradient(circle,#3A3456,#211E2E)] md:w-[300px] lg:w-[290px] rounded-3xl px-8 py-10 flex flex-col items-center"
-            >
-              <img
-                class="rounded-full shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)]"
-                src="./assets/images/SELF-CARE.svg"
-                alt="Self-Care"
-              />
-              <p class="text-xl font-bold mt-6 border-b border-[#C0B7E854] h-10">
-                SELF-CARE
-              </p>
-              <p class="text-xs mt-6 break-words w-56">
-                Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
-                porttitor rhoncus libero justo laoreet sit amet vitae.
-              </p>
-              <button
-                class="bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] mt-6 text-center text-xs font-bold text-[#343045] w-36 h-10 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
-              >
-                TRY IT NOW
+              <button class="swiper-button-nextN absolute top-1/2 right-0 -translate-x-1 z-10">
+                <img src="assets/images/arrowNext.svg" alt="Next" />
               </button>
-            </div>
-            <div
-              class="bg-[radial-gradient(circle,#3A3456,#211E2E)] md:w-[300px] lg:w-[290px] rounded-3xl px-8 py-10 flex flex-col items-center"
-            >
-              <img
-                class="rounded-full shadow-[0px_0px_2px_14px_rgba(14,14,14,0.32)]"
-                src="./assets/images/OUTDOOR.svg"
-                alt="Outdoor"
-              />
-              <p class="text-xl font-bold mt-6 border-b border-[#C0B7E854] h-10">
-                OUTDOOR
-              </p>
-              <p class="text-xs mt-6 break-words w-56">
-                Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
-                porttitor rhoncus libero justo laoreet sit amet vitae.
-              </p>
-              <button
-                class="bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] mt-6 text-center text-xs font-bold text-[#343045] w-36 h-10 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
-              >
-                TRY IT NOW
-              </button>
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
+
+
+          
         </div>
        </section>
 
     <!-- Section : Technologies -->
       <section id="tech" class="mt-28">
-      <div class="container flex flex-col gap-24">
-        <div class="relative ">
-          <img src="assets/images/techPic.png" alt="hydra">
-          <a><img src="assets/images/downIcon.png" class="absolute left-1/2 top-full -translate-x-1/2 -translate-y-1/2 hidden md:block"></a>
-        </div>
-
-        <div class="flex justify-evenly flex-wrap">
-          <img class="size-60" src="assets/images/VIVE.png" alt="hydra">
-          <img class="size-44" src="assets/images/unreal.png" alt="hydra">
-          <img class="size-60" src="assets/images/oculus.png" alt="hydra">
-          <img class="size-60" src="assets/images/unity.png" alt="hydra">
+        <div class="container flex flex-col gap-24">
+          <div class="relative bg-[url('assets/images/techPic.svg')] rounded-full bg-no-repeat bg-center bg-cover h-[19rem] w-full">
+            <div class="h-full w-full text-center table">
+              <div class="table-cell align-middle">
+                <p class="font-bold text-3xl text-white">TECHNOLOGIES & HARDWARE</p>
+                <p class="font-light text-3xl text-white">USED BY HYDRA VR.</p>
+              </div>
+            </div>
+        
+            <a>
+              <img src="assets/images/downIcon.png" class="absolute left-1/2 top-full -translate-x-1/2 -translate-y-1/2 md:block">
+            </a>
+          </div>
         </div>
         
-      </div>
+        
+       <div class="swiper-container container mt-28 relative">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide !flex justify-center items-center mt-14">
+      <img class="max-w-full h-auto block" src="assets/images/unreal.png" alt="unreal" />
+    </div>
+    <div class="swiper-slide !flex justify-center items-center">
+      <img class="max-w-full h-auto block" src="assets/images/VIVE.png" alt="VIVE" />
+    </div>
+    <div class="swiper-slide !flex justify-center items-center">
+      <img class="max-w-full h-auto block" src="assets/images/oculus.png" alt="oculus" />
+    </div>
+    <div class="swiper-slide !flex justify-center items-center">
+      <img class="max-w-full h-auto block" src="assets/images/unity.png" alt="unity" />
+    </div>
+  </div>
+ 
+  <button class="swiper-button-prevP absolute top-1/2 left-0 translate-x-1 z-10">
+    <img src="assets/images/arrowPrev.svg" alt="Previous" />
+  </button>
+  <button class="swiper-button-nextN absolute top-1/2 right-0 -translate-x-1 z-10">
+    <img src="assets/images/arrowNext.svg" alt="Next" />
+  </button>
+  
+  <div class="swiper-pagination"></div>
+</div>
+
        </section>
 
     <!-- Section : WITH HYDRA VR? -->
-      <section class="mt-24 pb-32 md:bg-[url('assets/images/vector16.svg')]  bg-no-repeat bg-center">
+      <section class="mt-24">
         <div class="container ">
 
           <div class="flex flex-col md:flex-row justify-center items-center lg:items-start text-white mb-32">
@@ -372,7 +416,7 @@
           </div>
         </div>
 
-        <div class="swiper-container relative container ">
+        <div class="swiper-container relative ">
           <div class="swiper-wrapper ">
             <!-- اسلاید 1 -->
             <div class="swiper-slide flex justify-center items-center bg-center bg-no-repeat">
@@ -381,7 +425,7 @@
                   01
                 </div>
                 <div class="flex items-center mt-6">
-                  <img class="pb-9 hidden lg:block" src="./assets/images/shape.svg" alt="" />
+                  <img class="pb-9" src="./assets/images/shape.svg" alt="" />
                   <p class="text-white font-semibold ml-3 text-2xl">
                     3D Conceptio <br /> & Design
                   </p>
@@ -396,7 +440,7 @@
                   02
                 </div>
                 <div class="flex items-center mt-6">
-                  <img class="pb-9 hidden lg:block" src="./assets/images/shape.svg" alt="" />
+                  <img class="pb-9" src="./assets/images/shape.svg" alt="" />
                   <p class="text-white font-semibold ml-3 text-2xl">
                     Interaction <br /> Design
                   </p>
@@ -411,7 +455,7 @@
                   03
                 </div>
                 <div class="flex items-center mt-6">
-                  <img class="pb-9 hidden lg:block" src="./assets/images/shape.svg" alt="" />
+                  <img class="pb-9" src="./assets/images/shape.svg" alt="" />
                   <p class="text-white font-semibold ml-3 text-2xl">
                     VR World <br /> User Testing
                   </p>
@@ -426,7 +470,7 @@
                   04
                 </div>
                 <div class="flex items-center mt-6">
-                  <img class="pb-9 hidden lg:block" src="./assets/images/shape.svg" alt="" />
+                  <img class="pb-9" src="./assets/images/shape.svg" alt="" />
                   <p class="text-white font-semibold ml-3 text-2xl">
                     Hydra VR <br /> Deploy
                   </p>
@@ -435,10 +479,10 @@
             </div>
           </div>
         
-          <button class="swiper-button-prevP absolute top-2/3 left-0 translate-x-1/2 z-10">
+          <button class="swiper-button-prevP absolute top-2/3 left-0 translate-x-1 z-10">
             <img src="assets/images/arrowPrev.svg" alt="Previous" />
           </button>
-          <button class="swiper-button-nextN absolute top-2/3 right-0 -translate-x-1/2 z-10">
+          <button class="swiper-button-nextN absolute top-2/3 right-0 -translate-x-1 z-10">
             <img src="assets/images/arrowNext.svg" alt="Next" />
           </button>
         
@@ -448,7 +492,7 @@
        </section>
 
     <!-- Section : JoinHydra -->
-      <section class="mt-24 mx-2">
+      <section class="mt-24">
         <div class="container p-5 lg:p-24 text-center bg-[radial-gradient(circle,#3A3456,#211E2E)] rounded-3xl drop-shadow-xl bg-no-repeat bg-center grid grid-cols-1 md:grid-cols-2 gap-x-2.5 gap-y-5 lg:gap-y-10 items-center">
           <h3 class="font-bold text-4xl text-white md:col-span-2 ">JOIN HYDRA</h3>
           <img src="assets/images/line.svg" class="md:col-span-2 w-1/2 justify-self-center my-7">
@@ -463,7 +507,7 @@
             placeholder="Tell Us Something..." 
             rows="5">
           </textarea>
-          <button class=" h-12 w-56 justify-self-center md:col-span-2 border border-purple font-semibold duration-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-sm  hover:bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-white text-center">
+          <button class=" h-12 w-56 justify-self-center md:col-span-2 border border-purple font-semibold duration-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 ... text-sm  hover:bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-white text-center">
             Send To Hydra
           </button>
         </div>
@@ -510,18 +554,19 @@
                 <img class="social-icon" src="./assets/images/Socials/instagram.svg" alt="">
                 <img class="social-icon" src="./assets/images/Socials/pinterest.svg" alt="">
               </div>
-              <button class="text-[#343045] h-12 w-52 justify-self-center md:col-span-2 border border-purple font-semibold duration-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-xs  bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-center">
+              <button class="text-[#343045] h-10 w-52 justify-self-center md:col-span-2 border border-purple font-semibold duration-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-xs px-5 py-1.5 bg-gradient-to-r from-[#8076af] to-[#c0b7e7] rounded-3xl text-center">
                 BUILD YOUR WORLD
               </button>
             </div>
           </div>
           
-              <div class="mt-14 text-center text-white mb-10 pb-10">
+              <div class="mt-14 text-center text-white mb-10 px-5 pb-10">
                 <hr class="h-0.5 w-full bg-gradient-to-r from-[#343045] via-[#8176AF] to-[#343045] m-0 p-0 border-0 bg-transparent" />
                 <p class="mt-10 font-semibold text-sm">2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED </p>
               </div>
 
               </div>
+
        </footer>
 
        <!-- JS Slider  -->
