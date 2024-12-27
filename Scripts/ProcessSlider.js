@@ -1,5 +1,5 @@
 const swiper = new Swiper('.swiper-container', {
-    loop: true,
+    loop:false,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
