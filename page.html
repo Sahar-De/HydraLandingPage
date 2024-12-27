@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <title>Hydra Landing Page</title>
@@ -22,14 +22,17 @@
           <img src="assets/images/Frame.png" class="w-[69px]" alt="hydra"/>
           <img src="assets/images/hydra.png" class="w-[46px] md:w-[76px]" alt="hydra"/>
         </div>
-        <nav class="navigation w-full  lg:w-1/3 overflow-hidden lg:block text-sm font-semibold">
-          <a>close</a>
-          <ul class="flex w-full flex-col justify-around lg:flex-row top-4 p-5 lg:p-0 right-0 absolute lg:static items-center gap-10 text-white">
-            <li class="cursor-pointer hover:text-yellow-100"><a>About</a></li>
-            <li class="cursor-pointer hover:text-yellow-100"><a>Services</a></li>
-            <li class="cursor-pointer hover:text-yellow-100"><a>Technologies</a></li>
-            <li class="cursor-pointer hover:text-yellow-100"><a>How To</a></li>
-          </ul>
+        <nav class="navigation w-full lg:w-[344px]  lg:block text-sm font-semibold">
+          <div class="navBar h-0 lg:h-auto overflow-hidden right-0 top-0 w-full transition-all duration-300 ease-in-out absolute lg:static ">
+            <div class="flex bg-maincolor  w-full flex-col justify-around lg:flex-row p-5 lg:p-0  items-end lg:items-center gap-10 text-white">
+              <img src="assets/images/close.svg" class="lg:hidden size-7 cursor-pointer closeBtn">
+              <p class="cursor-pointer hover:text-yellow-100"><a>About</a></p>
+              <p class="cursor-pointer hover:text-yellow-100"><a>Services</a></p>
+              <p class="cursor-pointer hover:text-yellow-100"><a>Technologies</a></p>
+              <p class="cursor-pointer hover:text-yellow-100"><a>How To</a></p>
+            </div>
+          </div>
+
         </nav>
         <div class="right-buttons hidden lg:block">
           <button
@@ -43,9 +46,9 @@
             Join Hydra
           </button>
         </div>
-        <div class="burgerMenu lg:hidden">
+        <button id="burgerMenu" class="lg:hidden">
           <img src="assets/images/Hamburger-Button.svg" />
-        </div>
+        </button>
        </header>
 
     <!-- Dive: Virtual Reality -->
@@ -579,5 +582,6 @@
        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
        <script src="Scripts/animations.js"></script>
+        <script src="Scripts/mobileMenu.js"></script>
   </body>
 </html>
