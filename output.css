@@ -818,6 +818,10 @@ video {
   width: 50%;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .w-36 {
   width: 9rem;
 }
@@ -852,6 +856,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .max-w-96 {
@@ -988,10 +996,6 @@ video {
 
 .overflow-x-hidden {
   overflow-x: hidden;
-}
-
-.scroll-smooth {
-  scroll-behavior: smooth;
 }
 
 .break-words {
@@ -1487,6 +1491,10 @@ video {
 
   .lg\:w-\[344px\] {
     width: 344px;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:flex-row {
