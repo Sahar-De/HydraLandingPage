@@ -818,8 +818,8 @@ video {
   width: 50%;
 }
 
-.w-2\/3 {
-  width: 66.666667%;
+.w-3\/4 {
+  width: 75%;
 }
 
 .w-36 {
@@ -856,10 +856,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-3\/4 {
-  width: 75%;
 }
 
 .max-w-96 {
