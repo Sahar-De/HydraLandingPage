@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.from(".bottom-div", {
     duration: 2,
-    y: 100,
+    y: 1000,
     opacity: 0,
     ease: "power3.out",
     scrollTrigger: {
